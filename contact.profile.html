@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/44e49b6a5c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> User-profile</title>
+</head>
+
+<style>
+.fa-circle-chevron-left{
+    color: #fff;
+    /* display: flex;
+    align-self: flex-start; */
+    padding-right: 15px;
+    font-size: 1.5em;
+    float: left;
+}
+
+#form-input {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    color: #fff;
+    width: 100%;
+}
+
+input[type=search-name] {
+    padding: 5px;
+}
+
+input[type=text] {
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+input[type=number] {
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+input[type=email] {
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+#submit {
+    display: flex;
+    align-self: center;
+    padding: 8px 15px 8px 15px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    /* transition: 0.3s; */
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: -50px;
+    width: 428px;
+    background-color:#313438;
+    max-width: 428px;
+    border-radius: 25px;
+    overflow:visible;
+    outline: none;
+
+}
+#modall{
+    max-width: 428px;
+    margin: 0 auto 0 auto;
+    background-color: #313438;
+    min-height: 100vh;
+    border: 4px solid black;
+    border-radius: 25px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: crimson;
+    margin: 0
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(90deg, rgba(66, 159, 124, 1) 0%, rgba(163, 193, 78, 1) 100%);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    /* border-radius: 25px; */
+    padding: 1.5em;
+    align-items: center;
+    width: 89%;
+}
+.fa-user-pen{
+    color: #fff;
+    font-size: 1.5em;
+    float: right;
+}
+
+</style>
+
+<!-- <i class="fa-solid fa-trash-can"></i> -->
+<body>
+    <div id="modall">
+    <section>
+        <header>
+         <a href="contact form.html"><i class="fa-solid fa-circle-chevron-left"></i></a> 
+            <h2>New Contact</h2>
+            <i class="fa-solid fa-user-pen"></i>
+        </header>
+
+        <form id="form-input">
+            <label for="fname">Name:</label>
+            <input type="text" id="fname" placeholder="Enter name">
+
+            <label for="number">Phone-NO:</label>
+            <input type="number" id="number" placeholder="Phone number">
+
+            <label for="fEmail">Email:</label>
+            <input type="email" id="fEmail" placeholder="Enter email">
+
+            <label for="relation">Relationship:</label>
+            <input type="text" id="relation" placeholder="Relationship">
+
+            <button type="submit" id="submit">Save</button>
+        </form>
+    </section>
+</div>
+<script src="contact.js"></script>
+</body>
+
+</html>
