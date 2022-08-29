@@ -47,10 +47,20 @@ input[type=email] {
     padding: 5px;
 }
 
+
+
 #submit {
-    display: flex;
-    align-self: center;
+     
     padding: 8px 15px 8px 15px;
+    font-size: 18px;
+    background-color: green;
+
+}
+#cancel{
+    
+    padding: 8px 15px 8px 15px;
+    font-size: 18px;
+    background-color: tomato;
 }
 section{
     display: flex;
@@ -115,7 +125,7 @@ header{
             <i class="fa-solid fa-user-pen"></i>
         </header>
 
-        <form id="form-input">
+        <form id="form-input" onsubmit="onFormSubmit(); event.preventDefault()">
             <label for="fname">Name:</label>
             <input type="text" id="fname" placeholder="Enter name">
 
@@ -129,8 +139,13 @@ header{
             <input type="text" id="relation" placeholder="Relationship">
 
             <button type="submit" id="submit">Save</button>
+
+            <button type="submit" id="cancel">Cancel</button>
+
         </form>
+        
     </section>
+    
 </div>
 <script src="contact.js"></script>
 </body>
